@@ -1,6 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route} from 'react-router-dom';
 import './index.css';
 import App from './App';
+import InfoSheet from "./components/InfoSheet/InfoSheet";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+    <div>
+      <Route path="/" component={App} exact />
+      <Route path="/InfoSheet" component={InfoSheet} />
+    </div>
+  </BrowserRouter>,
+document.getElementById('root'));

@@ -12,13 +12,12 @@
 }
 
 .InfoCard .Name {
-  border-bottom: 1px solid lightblue;
   width: 95%;
   align-self: center;
-  align-items: flex-end;
+  align-items: center;
   box-shadow: none;
   background: transparent;
-  margin-bottom: 6px;
+  padding: 3px;
   font-size: 16px;
   font-weight: bold;
 }

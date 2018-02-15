@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import InfoCard from "./components/InfoCard/InfoCard.js";
+import { BrowserRouter, Route } from 'react-router-dom';
+import InfoCard from "./components/InfoCard/InfoCard";
 import './App.css';
 
 class App extends Component {
@@ -12,9 +13,6 @@ class App extends Component {
     };
   }
   componentDidMount() {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
-    // We then take that data and resolve it our state.
     fetch('https://swapi.co/api/people')
       .then(res => {
         return res.json();
