@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import "../InfoCard/InfoCard.css";
 
 const InfoSheet = props => {
+  console.log({...props});
   const character = props;
 
   return (
     <div className="InfoCard">
-    <h1><Link to="/">Home</Link></h1>
+    <h3><Link to="/">Home</Link></h3>
       <div className="InfoCard Name">
         {character.name}
       </div>

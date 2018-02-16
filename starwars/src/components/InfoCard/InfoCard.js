@@ -6,7 +6,7 @@ const InfoCard = props => {
   const character = props.character;
 
   return (
-    <Link to={`/InfoSheet/${props.id}`}>
+    <Link to={`/InfoSheet/${props.id}`} >
       <div className="InfoCard">
         <div className="InfoCard Name">
           {character.name}

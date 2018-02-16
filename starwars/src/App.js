@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
 import InfoCard from "./components/InfoCard/InfoCard";
 import './App.css';
+import InfoSheet from './components/InfoSheet/InfoSheet';
 
 class App extends Component {
   constructor() {
